@@ -1,0 +1,16 @@
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:columnWidth="150dp"
+    android:verticalSpacing="0dp"
+    android:horizontalSpacing="0dp"
+    android:stretchMode="columnWidth"
+    android:id="@+id/movies_gridview"
+    android:numColumns="auto_fit"
+    tools:context="com.mohamedhuzien.PopularMovies.MainActivityFragment"
+    tools:showIn="@layout/activity_main">
+
+
+</GridView>

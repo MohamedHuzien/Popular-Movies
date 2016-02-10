@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/clouds">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:id="@+id/movie_title"
+        android:fontFamily="sans-serif"
+        android:text="Installer  (2015)"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/colorHeader"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_title"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:fontFamily="sans-serif-light"
+        android:id="@+id/genres_small"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:text="Drama | Action"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/genres_small"
+        android:padding="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/movie_overview_section"
+            android:background="@color/White_true"
+
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overview"
+                android:textSize="14dp"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_overview"
+                android:textSize="15dp"
+                android:text="in the 1820s, a frontiersman, Hugh Glass, sets out on a path of vengeance against those who left him for dead after a bear mauling."
+                />
+        </LinearLayout>
+
+        <ImageView
+
+
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:id="@+id/movie_poster"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/installer"
+            android:layout_below="@+id/movie_overview_section"
+
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="277dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/movie_poster"
+            android:layout_below="@+id/movie_overview_section"
+            android:id="@+id/movieInfo_section"
+            android:background="@color/White_true"
+            android:padding="5dp">
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                >
+
+                <TextView
+                    android:fontFamily="sans-serif-light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="Title"
+                    android:textColor="@color/darkWhite"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/movie_title_small"
+                    android:text="Installer"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height= "1dp"
+                    android:background="@color/clouds" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:text="Rating"
+                    android:textColor="@color/darkWhite"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/movie_rating"
+                    android:text="7.5/10"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height= "1dp"
+                    android:background="@color/clouds" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Release Date"
+                    android:textColor="@color/darkWhite"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="@color/black"
+                    android:id="@+id/movie_release_date"
+                    android:text="2015"
+
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height= "1dp"
+                    android:background="@color/clouds" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Runtime"
+                    android:textColor="@color/darkWhite"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/movie_runtime"
+                    android:text="120 min"
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height= "1dp"
+                    android:background="@color/clouds" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="14dp"
+                    android:text="Budget"
+                    android:textColor="@color/darkWhite"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/movie_budget"
+                    android:text="$ 120384"
+
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height= "1dp"
+                    android:background="@color/clouds" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="14dp"
+                    android:text="Genres"
+                    android:textColor="@color/darkWhite"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/movie_genres"
+                    android:text="Drama,Action"
+                    />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/tagline_section"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/White_true"
+
+            android:layout_below="@+id/movieInfo_section">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="TagLine"
+                android:textSize="14dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_tagline"
+                android:text="tageline tageline hi i'm Mohamed Huzien do you knowmr"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/White_true"
+
+            android:layout_below="@+id/tagline_section">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Trailer"
+                android:textSize="14dp"
+                android:layout_marginBottom="5dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height= "1dp"
+                android:background="@color/clouds" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:textAlignment="gravity"
+                android:id="@+id/show_movie_trailer"
+                android:src="@drawable/icon_play"
+                android:contentDescription="Play trailer"
+                android:gravity="left"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height= "1dp"
+                android:background="@color/clouds"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/show_reviews"
+                android:layout_height="48dp"
+                android:text="Reviews"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
